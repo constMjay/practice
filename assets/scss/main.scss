@@ -1,0 +1,63 @@
+@import "../bootstrap/scss/bootstrap.scss";
+
+$headerBg: #fffbe2;
+$primary: #1877f2;
+$success: #00a400;
+$footerColor: #b6c7e2;
+$footerColor2: #a2a5ac;
+$headerColor: #6178a6;
+$inputBgColor: #f5f6f7;
+.container {
+  header {
+    height: 8vh;
+    background-color: $headerBg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h6 {
+      color: $headerColor;
+    }
+  }
+  main {
+    h3 {
+      color: $primary;
+    }
+    #myForm {
+      .form-group {
+        input {
+          padding: 1.5rem;
+          background-color: $inputBgColor;
+        }
+      }
+      #createButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+  footer {
+    .footerContent {
+      display: flex;
+      justify-content: center;
+      #footerFirst {
+        ul {
+          list-style-type: none;
+          li:nth-child(1) {
+            h6 {
+              color: $footerColor2;
+            }
+          }
+        }
+      }
+      #footerSecond {
+        ul {
+          list-style-type: none;
+        }
+      }
+    }
+    p {
+      color: $footerColor2;
+    }
+  }
+}
