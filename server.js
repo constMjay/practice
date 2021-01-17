@@ -21,7 +21,7 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
  */
 app.set('views', path.join(__dirname, "backend/views"))
 app.set('view engine', 'ejs')
-app.use("/assets", express.static(path.join(__dirname, "frontend/assets")))
+app.use("/static", express.static(path.join(__dirname, "frontend/static")))
 
 /**
  * Middleware
